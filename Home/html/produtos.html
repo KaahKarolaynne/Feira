@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira Online | Cadastro</title>
+    <link rel="stylesheet" href="produtstyle.css">
+    <script src="controle.js"></script>
+    <script>
+        localStorage.setItem("Produto")
+    </script>
+
+</head>
+<body>            
+    <header>
+        <div class="header-content">
+            <h1 class="logo">FEIRA<strong>ONLINE</strong></h1>
+        <nav>
+            <ul>
+                <li><a href="produtos.html">Cadastro de Produtos</a></li>
+            </ul>
+        </nav>
+    </div><!--header content-->
+    </header>
+
+<hr>
+
+<main>
+    <div class="title">
+        <span>Lista de Produtos Cadastrados</span>
+    </div> <!--title-->
+
+    <div class="card">
+
+        <div class="lineInput">
+            <label>Produto</label>
+            <input type="text" id="produto" placeholder="Nome do produto">
+        </div><!--lineInput-->
+
+        <div class="lineInput">
+            <label>Valor</label>
+            <input type="text" id="valor" value="0.00">
+        </div><!--lineInput-->
+
+
+
+        <button onclick="produto.cadastrar()">Cadastrar</button>
+        <button onclick="produto.excluir()">Excluir</button>
+    </div><!--card-->
+    
+    <div class="content">
+        <table border="1">
+            <thead>
+                <th class="center">Produto</th>
+                <th class="center">Valor</th>
+            </thead>
+            <!--<tr> são as linhas da tabela-->
+            <!--<td> são as colunas-->
+            <tbody id="tbody">
+                
+            </tbody>
+
+        </table>
+    </div>
+
+</main>
+
+</body>
+
+
+</body>
+</html>
